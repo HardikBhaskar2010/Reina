@@ -1,8 +1,8 @@
-"# 💕 Love OS
+# 💕 Love OS
 
 ### *Our Private Little Universe*
 
-<div align=\"center\">
+<div align="center">
 
 ![Love OS Hero](https://via.placeholder.com/1200x400/FFB6C1/FF69B4?text=Love+OS+💕+Our+Digital+Love+Story)
 
@@ -138,11 +138,11 @@ Love OS is our little digital world where every day feels like falling in love a
 
 ---
 
-<div align=\"center\">
+<div align="center">
 
 ### 🌟 Our Journey Continues
 
-*\"In a world full of apps, this one is ours.\"*
+*"In a world full of apps, this one is ours."*
 
 **Cookie** 🍪 & **Bunny** 🐰
 
@@ -151,4 +151,3 @@ Love OS is our little digital world where every day feels like falling in love a
 *Built with React ⚛️ • Styled with Tailwind 🎨 • Animated with Framer Motion ✨*
 
 </div>
-"

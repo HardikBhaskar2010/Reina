@@ -1,7 +1,12 @@
 {
-  "short_name": "pink-os-love-app",
-  "name": "pink-os-love-app",
+  "short_name": "Love OS",
+  "name": "Love OS 💕 - Our Private Little Universe",
   "icons": [
+    {
+      "src": "love-os-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
     {
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
@@ -10,6 +15,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#FFB6C1",
+  "background_color": "#FFF0F5"
 }
