@@ -7,10 +7,12 @@ import LetterCard from './components/LetterCard';
 import LetterModal from './components/LetterModal';
 import EmptyState from './components/EmptyState';
 import Icon from '../../components/AppIcon';
+import { useToast } from '../../components/ui/Toast';
 
 
 const LoveLettersManager = () => {
   const navigate = useNavigate();
+  const { toast } = useToast();
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [activeCollection, setActiveCollection] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
@@ -172,11 +174,13 @@ const LoveLettersManager = () => {
 
   const handleNewLetter = () => {
     // Navigate to letter creation or show creation modal
+    toast.info('Letter creation feature coming soon! 💌', 4000);
     console.log('Creating new letter...');
   };
 
   const handleBulkAction = (actionId) => {
     console.log(`Bulk action: ${actionId} on letters:`, selectedLetters);
+    toast.success(`Action "${actionId}" completed successfully!`, 3000);
     setSelectedLetters([]);
   };
 

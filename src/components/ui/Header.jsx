@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import Icon from '../AppIcon';
 import Button from './Button';
+import { ThemeToggle } from './ThemeToggle';
 
 const Header = () => {
   const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
@@ -124,13 +125,20 @@ const Header = () => {
               }
             `}
             title="Access Secret Box Vault"
+            data-testid="secret-box-nav-button"
           >
             <Icon name="Lock" size={16} className="group-hover:animate-bounce-gentle" />
             <span className="hidden xl:inline">Secret Box</span>
           </button>
 
+          {/* Theme Toggle */}
+          <ThemeToggle />
+
           {/* Notifications */}
-          <button className="relative p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted/10 transition-all duration-300 group">
+          <button 
+            className="relative p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted/10 transition-all duration-300 group"
+            data-testid="notifications-button"
+          >
             <Icon name="Bell" size={18} className="group-hover:animate-bounce-gentle" />
             <div className="absolute top-1 right-1 w-2 h-2 bg-accent rounded-full animate-pulse"></div>
           </button>

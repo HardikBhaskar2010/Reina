@@ -9,6 +9,7 @@ import DesktopHome from './pages/desktop-home';
 import PhotoTimelineGallery from './pages/photo-timeline-gallery';
 import SecretBoxVault from './pages/secret-box-vault';
 import SharedCalendarPlanner from './pages/shared-calendar-planner';
+import FeatureDemo from './pages/FeatureDemo';
 
 const Routes = () => {
   return (
@@ -24,6 +25,7 @@ const Routes = () => {
         <Route path="/photo-timeline-gallery" element={<PhotoTimelineGallery />} />
         <Route path="/secret-box-vault" element={<SecretBoxVault />} />
         <Route path="/shared-calendar-planner" element={<SharedCalendarPlanner />} />
+        <Route path="/feature-demo" element={<FeatureDemo />} />
         <Route path="*" element={<NotFound />} />
       </RouterRoutes>
       </ErrorBoundary>

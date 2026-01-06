@@ -143,6 +143,7 @@ const DesktopHome = () => {
               <button 
                 onClick={() => setShowWelcome(false)}
                 className="mt-3 px-4 py-2 bg-primary/20 rounded-full text-xs text-primary font-medium"
+                data-testid="welcome-dismiss-button"
               >
                 Let's start 💕
               </button>
@@ -161,9 +162,9 @@ const DesktopHome = () => {
         </div>
       </div>
       {/* Mobile Bottom Navigation */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 bg-gradient-to-t from-white/95 to-white/90 backdrop-blur-md border-t border-pink-200/30">
+      <div className="fixed bottom-0 left-0 right-0 z-50 bg-gradient-to-t from-white/95 to-white/90 backdrop-blur-md border-t border-pink-200/30" data-testid="mobile-bottom-nav">
         <div className="flex items-center justify-around py-3 px-4">
-          <button className="flex flex-col items-center space-y-1 p-2 rounded-xl hover:bg-primary/10 transition-all duration-300">
+          <button className="flex flex-col items-center space-y-1 p-2 rounded-xl hover:bg-primary/10 transition-all duration-300" data-testid="nav-home-button">
             <div className="w-6 h-6 text-muted-foreground">🏠</div>
             <span className="text-xs text-muted-foreground font-medium">Home</span>
           </button>
@@ -171,17 +172,18 @@ const DesktopHome = () => {
           <button 
             onClick={handleStartMenuToggle}
             className="flex flex-col items-center space-y-1 p-2 rounded-xl hover:bg-primary/10 transition-all duration-300"
+            data-testid="nav-apps-button"
           >
             <div className="w-6 h-6 text-primary">💝</div>
             <span className="text-xs text-primary font-medium">Apps</span>
           </button>
           
-          <button className="flex flex-col items-center space-y-1 p-2 rounded-xl hover:bg-primary/10 transition-all duration-300">
+          <button className="flex flex-col items-center space-y-1 p-2 rounded-xl hover:bg-primary/10 transition-all duration-300" data-testid="nav-messages-button">
             <div className="w-6 h-6 text-muted-foreground">💌</div>
             <span className="text-xs text-muted-foreground font-medium">Messages</span>
           </button>
           
-          <button className="flex flex-col items-center space-y-1 p-2 rounded-xl hover:bg-primary/10 transition-all duration-300">
+          <button className="flex flex-col items-center space-y-1 p-2 rounded-xl hover:bg-primary/10 transition-all duration-300" data-testid="nav-settings-button">
             <div className="w-6 h-6 text-muted-foreground">⚙️</div>
             <span className="text-xs text-muted-foreground font-medium">Settings</span>
           </button>

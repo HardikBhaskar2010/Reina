@@ -9,7 +9,7 @@
 
 @layer base {
   :root {
-    /* Core System Colors */
+    /* Core System Colors - Light Mode */
     --color-background: #FFEAF2; /* pale-pink-50 */
     --color-foreground: #2D1B2E; /* deep-mauve-900 */
     --color-border: rgba(255, 192, 203, 0.2); /* pink-300 with opacity */
@@ -58,6 +58,58 @@
     --shadow-medium: 0 8px 32px rgba(255, 209, 232, 0.25);
     --shadow-strong: 0 16px 48px rgba(255, 209, 232, 0.3);
     --shadow-floating: 0 24px 64px rgba(255, 209, 232, 0.35);
+  }
+
+  .dark {
+    /* Core System Colors - Dark Mode */
+    --color-background: #1A0E1F; /* deep-purple-950 */
+    --color-foreground: #F5E6F0; /* pale-pink-100 */
+    --color-border: rgba(255, 192, 203, 0.15); /* pink with lower opacity */
+    --color-input: #2D1B2E; /* deep-mauve-900 */
+    --color-ring: #B365A7; /* purple-400 */
+    
+    /* Card & Surface Colors */
+    --color-card: #2D1B2E; /* deep-mauve-900 */
+    --color-card-foreground: #F5E6F0; /* pale-pink-100 */
+    --color-popover: #2D1B2E; /* deep-mauve-900 */
+    --color-popover-foreground: #F5E6F0; /* pale-pink-100 */
+    
+    /* Muted Colors */
+    --color-muted: #6B4C6D; /* muted-purple-600 */
+    --color-muted-foreground: #D4A5C7; /* light-purple-300 */
+    
+    /* Primary Brand Colors */
+    --color-primary: #B365A7; /* purple-400 */
+    --color-primary-foreground: #F5E6F0; /* pale-pink-100 */
+    
+    /* Secondary Colors */
+    --color-secondary: #8B4A7F; /* purple-500 */
+    --color-secondary-foreground: #F5E6F0; /* pale-pink-100 */
+    
+    /* Accent Colors */
+    --color-accent: #F4C542; /* warm-gold-400 */
+    --color-accent-foreground: #1A0E1F; /* deep-purple-950 */
+    
+    /* Success Colors */
+    --color-success: #6FC5B0; /* mint-400 */
+    --color-success-foreground: #1A0E1F; /* deep-purple-950 */
+    
+    /* Warning Colors */
+    --color-warning: #FF9F40; /* peach-400 */
+    --color-warning-foreground: #1A0E1F; /* deep-purple-950 */
+    
+    /* Error/Destructive Colors */
+    --color-error: #FF8787; /* coral-400 */
+    --color-error-foreground: #1A0E1F; /* deep-purple-950 */
+    --color-destructive: #FF8787; /* coral-400 */
+    --color-destructive-foreground: #1A0E1F; /* deep-purple-950 */
+    
+    /* Glassmorphism Shadow Variables */
+    --shadow-soft: 0 4px 20px rgba(179, 101, 167, 0.2);
+    --shadow-gentle: 0 2px 8px rgba(179, 101, 167, 0.15);
+    --shadow-medium: 0 8px 32px rgba(179, 101, 167, 0.2);
+    --shadow-strong: 0 16px 48px rgba(179, 101, 167, 0.25);
+    --shadow-floating: 0 24px 64px rgba(179, 101, 167, 0.3);
   }
   
   * {

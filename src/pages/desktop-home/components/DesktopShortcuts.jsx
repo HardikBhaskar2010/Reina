@@ -42,6 +42,14 @@ const DesktopShortcuts = ({ onNavigate }) => {
       icon: 'Lock', 
       color: 'from-yellow-400 to-orange-400',
       description: 'Private memories'
+    },
+    {
+      id: 'feature-demo',
+      label: '✨ New Features',
+      path: '/feature-demo',
+      icon: 'Sparkles', 
+      color: 'from-cyan-400 to-blue-400',
+      description: 'UI/UX Showcase'
     }
   ]);
 
