@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core System Colors */
+    --color-background: #FFEAF2; /* pale-pink-50 */
+    --color-foreground: #2D1B2E; /* deep-mauve-900 */
+    --color-border: rgba(255, 192, 203, 0.2); /* pink-300 with opacity */
+    --color-input: #FFFFFF; /* white */
+    --color-ring: #FFD1E8; /* soft-pink-200 */
+    
+    /* Card & Surface Colors */
+    --color-card: #FFFFFF; /* white */
+    --color-card-foreground: #2D1B2E; /* deep-mauve-900 */
+    --color-popover: #FFFFFF; /* white */
+    --color-popover-foreground: #2D1B2E; /* deep-mauve-900 */
+    
+    /* Muted Colors */
+    --color-muted: #FFC0CB; /* classic-pink-300 */
+    --color-muted-foreground: #6B4C6D; /* muted-purple-600 */
+    
+    /* Primary Brand Colors */
+    --color-primary: #FFD1E8; /* soft-pink-200 */
+    --color-primary-foreground: #2D1B2E; /* deep-mauve-900 */
+    
+    /* Secondary Colors */
+    --color-secondary: #FFC0CB; /* classic-pink-300 */
+    --color-secondary-foreground: #2D1B2E; /* deep-mauve-900 */
+    
+    /* Accent Colors */
+    --color-accent: #FFD700; /* warm-gold-400 */
+    --color-accent-foreground: #2D1B2E; /* deep-mauve-900 */
+    
+    /* Success Colors */
+    --color-success: #98D8C8; /* soft-mint-300 */
+    --color-success-foreground: #2D1B2E; /* deep-mauve-900 */
+    
+    /* Warning Colors */
+    --color-warning: #FFB347; /* warm-peach-300 */
+    --color-warning-foreground: #2D1B2E; /* deep-mauve-900 */
+    
+    /* Error/Destructive Colors */
+    --color-error: #F7A4A4; /* gentle-coral-300 */
+    --color-error-foreground: #2D1B2E; /* deep-mauve-900 */
+    --color-destructive: #F7A4A4; /* gentle-coral-300 */
+    --color-destructive-foreground: #2D1B2E; /* deep-mauve-900 */
+    
+    /* Glassmorphism Shadow Variables */
+    --shadow-soft: 0 4px 20px rgba(255, 209, 232, 0.3);
+    --shadow-gentle: 0 2px 8px rgba(255, 209, 232, 0.2);
+    --shadow-medium: 0 8px 32px rgba(255, 209, 232, 0.25);
+    --shadow-strong: 0 16px 48px rgba(255, 209, 232, 0.3);
+    --shadow-floating: 0 24px 64px rgba(255, 209, 232, 0.35);
+  }
+  
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  /* Glassmorphism Base Classes */
+  .glass-effect {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .glass-card {
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 209, 232, 0.3);
+    box-shadow: var(--shadow-soft);
+  }
+  
+  /* Kawaii Animation Classes */
+  .bounce-gentle {
+    animation: bounceGentle 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .glow-warm {
+    box-shadow: 0 0 20px rgba(255, 209, 232, 0.4);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .heart-pulse {
+    animation: heartPulse 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes bounceGentle {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+  }
+  
+  @keyframes heartPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+  
+  /* Floating Animation for Background Elements */
+  .float-slow {
+    animation: floatSlow 6s ease-in-out infinite;
+  }
+  
+  .float-medium {
+    animation: floatMedium 4s ease-in-out infinite;
+  }
+  
+  .float-fast {
+    animation: floatFast 3s ease-in-out infinite;
+  }
+  
+  @keyframes floatSlow {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(2deg); }
+  }
+  
+  @keyframes floatMedium {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(-2deg); }
+  }
+  
+  @keyframes floatFast {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(3deg); }
+  }
+}
